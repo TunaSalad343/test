@@ -1,0 +1,25 @@
+{
+	"nodes": [
+		{
+			"name": "node1",
+			"region": "nyc3",
+			"size": "s-1vcpu-1gb",
+			"image": "ubuntu-20-04-x64",
+			"permissions" : "node2,node3"
+		},
+		{
+			"name": "node2",
+			"region": "nyc3",
+			"size": "s-1vcpu-1gb",
+			"image": "ubuntu-20-04-x64",
+			"permissions": "node1"
+		},
+		{
+			"name": "node3",
+			"region": "nyc3",
+			"size": "s-1vcpu-1gb",
+			"image": "ubuntu-20-04-x64",
+			"permissions": ""
+		}
+	]
+}
